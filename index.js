@@ -42,7 +42,11 @@ function total() {
 }
 
 function removeFromCart(item) {
-  cart.splice(indexOf(item), 1) == true ? return : return 'That item is not in your cart.'
+  if (cart.splice(indexOf(item), 1) == true){
+    return
+  } else {
+    return 'That item is not in your cart'
+  }
 }
 
 function placeOrder(cardNumber) {
