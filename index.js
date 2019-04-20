@@ -42,7 +42,7 @@ function total() {
 }
 
 function removeFromCart(item) {
-  if cart[item] === true{
+  if (cart[item] === true) {
     console.log("x");
     return
   } else {
