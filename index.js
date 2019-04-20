@@ -42,7 +42,7 @@ function total() {
 }
 
 function removeFromCart(item) {
-  if (cart[item] === true) {
+  if (cart.splice(cart[item], 1) === true) {
     console.log("xxxxxxxxxx")
     return
   } else {
