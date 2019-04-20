@@ -42,8 +42,8 @@ function total() {
 }
 
 function removeFromCart(item) {
-  if (cart[item] === true) {
-    console.log("xxxxxxxxxx");
+  if (cart.item === true) {
+    console.log("xxxxxxxxxx")
     return
   } else {
     return 'That item is not in your cart.'
