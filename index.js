@@ -16,7 +16,6 @@ function addToCart(item) {
 }
 
 function viewCart() {
-
   switch (cart.length) {
     case 0:
       return 'Your shopping cart is empty.'
@@ -43,7 +42,7 @@ function total() {
 }
 
 function removeFromCart(item) {
-  // write your code here
+  cart.itemName === item ? console.log('true');: return 'That item is not in your cart.'
 }
 
 function placeOrder(cardNumber) {
