@@ -42,7 +42,9 @@ function total() {
 }
 
 function removeFromCart(item) {
-  var i = cart.findIndex({cart[itemName]===item})
+  var i = cart.find( function(item){
+    this.itemName === item
+  });
   console.log(i);
 }
 
