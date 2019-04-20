@@ -42,7 +42,7 @@ function total() {
 }
 
 function removeFromCart(item) {
-  cart.itemName === item ? console.log('true') : return 'That item is not in your cart.'
+  cart.itemName === item ? console.log('true') : console.log('That item is not in your cart.')
 }
 
 function placeOrder(cardNumber) {
