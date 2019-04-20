@@ -42,13 +42,8 @@ function total() {
 }
 
 function removeFromCart(item) {
-  console.log("xxxxxxxxxx");
-  if (cart.splice(cart.indexOf(item), 1) === true) {
-    console.log("xxxxxxxxxx")
-    return
-  } else {
-    return 'That item is not in your cart.'
-  }
+  var i = cart.findIndex({cart[itemName]===item})
+  console.log(i);
 }
 
 function placeOrder(cardNumber) {
